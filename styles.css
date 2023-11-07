@@ -1,0 +1,47 @@
+/* Style the header and navigation bar */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the sections to be edge-to-edge */
+section {
+    padding: 40px;
+    background-color: #f5f5f5;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-top: none; 
+}
+
+
+section h1, section p {
+    font-size: 24px;
+    margin: 0 auto;
+    color: #333;
+    text-align: center; 
+}
+
+
+section a {
+    color: #0074D9;
+    text-decoration: underline;
+    max-width: none; 
+}
+
