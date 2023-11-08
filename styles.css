@@ -45,3 +45,20 @@ section a {
     max-width: none; 
 }
 
+section form * {
+    display: block;
+}
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact > h2,
+#contact > span {
+    flex-basis: 100%;
+}
+
+#contact section {
+    flex: 1;
+}
