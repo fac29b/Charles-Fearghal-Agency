@@ -50,7 +50,8 @@ section form * {
 }
 
 #contact,
-#team {
+#team,
+#about {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -60,7 +61,8 @@ section form * {
 #contact > h2,
 #contact > span,
 #team > h2,
-#team > span {
+#team > span, 
+#about > h2{
     flex-basis: 100%;
 }
 
@@ -77,4 +79,15 @@ section form * {
 }
 .team-member img{
     width: 100%;
+}
+
+#about img {
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about > section {
+    margin: 2%;
+    flex: 1 0 calc(20% - 2%);
 }
