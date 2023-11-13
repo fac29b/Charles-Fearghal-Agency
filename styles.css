@@ -30,14 +30,12 @@ section {
     border-top: none; 
 }
 
-
 section h1, section p {
     font-size: 24px;
     margin: 0 auto;
     color: #333;
     text-align: center; 
 }
-
 
 section a {
     color: #0074D9;
@@ -74,6 +72,7 @@ section form * {
     flex: 1;
 }
 
+<<<<<<< HEAD
 #home img {
     max-width: 55%;
     max-height: 55%;
@@ -89,13 +88,15 @@ section form * {
 }
 
 
+=======
+>>>>>>> main
 .team-member {
-    /* width: 40%; */
     margin: 2%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1 0 calc(30% - 2%);
 }
-.team-member img{
+
+.team-member img {
     width: 100%;
 }
 
@@ -108,4 +109,77 @@ section form * {
 #about > section {
     margin: 2%;
     flex: 1 0 calc(20% - 2%);
+}
+
+/* New styles for the contact form */
+/* General Styles for Contact Section */
+#contact {
+    background-color: #f2f2f2; /* Light grey background for the contact section */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#contact h2,
+#contact h3 {
+    color: #333;
+    text-align: center;
+}
+
+/* Form Styling */
+#contact form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact label {
+    display: block;
+    margin-top: 10px;
+    color: #666;
+}
+
+#contact input[type="text"],
+#contact input[type="tel"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact input[type="text"]:focus,
+#contact input[type="tel"]:focus,
+#contact textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#contact button[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #contact form {
+        width: 90%;
+        margin: 10px;
+    }
 }
