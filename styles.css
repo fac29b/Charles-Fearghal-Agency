@@ -47,6 +47,8 @@ section form * {
     display: block;
 }
 
+/* Flexbox containers */
+#home,
 #contact,
 #team,
 #about {
@@ -56,6 +58,7 @@ section form * {
     flex-wrap: wrap;
 }
 
+/* flex children that need 100% width */
 #contact > h2,
 #contact > span,
 #team > h2,
@@ -64,9 +67,26 @@ section form * {
     flex-basis: 100%;
 }
 
-#contact section {
+#contact section,
+#home div {
     flex: 1;
 }
+
+#home img {
+    max-width: 55%;
+    max-height: 55%;
+    object-fit: contain;
+}
+
+#home {
+    background-color: #fff;
+}
+
+#home > div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 
 .team-member {
     margin: 2%;
