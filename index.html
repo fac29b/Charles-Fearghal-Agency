@@ -116,35 +116,49 @@
         </section>
         
         <section>
-            <form action="">
+            <form action="" id="contactForm">
                 <h3>Leave your details:</h3>
-
+        
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name">
-
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
                 <label for="email">Email:</label>
-                <input type="text" id="email" name="email" placeholder="Enter your email">
-
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
                 <label for="phone">Phone number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        
                 <label for="message">Message:</label>
-                <textarea type="tel" id="message" name="message" placeholder="Type your message here..."></textarea>
-
+                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+        
                 <button type="submit">Submit</button>
             </form>
+        
+            <div id="thankYouMessage" style="display: none;">
+                <h3>Thank you for contacting us!</h3>
+            </div>
         </section>
-    
-    </section>
-    <script>
-        function toggleMenu() {
-            var navList = document.getElementById("nav-list");
-            if (navList.style.display === "block") {
-                navList.style.display = "none";
-            } else {
-                navList.style.display = "block";
+        
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevents default form submission behavior
+        
+                // Hide the form
+                document.getElementById('contactForm').style.display = 'none';
+        
+                // Show the thank you message
+                document.getElementById('thankYouMessage').style.display = 'block';
+            });
+        
+            function toggleMenu() {
+                var navList = document.getElementById("nav-list");
+                if (navList.style.display === "block") {
+                    navList.style.display = "none";
+                } else {
+                    navList.style.display = "block";
+                }
             }
-        }
         </script>
+        
 </body>
 </html>
