@@ -21,6 +21,40 @@ nav a {
     font-weight: bold;
 }
 
+/* Hamburger Menu Style */
+#hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Display hamburger icon in mobile view */
+    #hamburger {
+        display: block;
+    }
+
+    /* Hide navigation list in mobile view by default */
+    #nav-list {
+        display: none;
+    }
+
+    /* Stack list items vertically in mobile view */
+    nav li {
+        display: block;
+        text-align: left;
+        margin-right: 0;
+    }
+
+    /* Adjust contact form width in mobile view */
+    #contact form {
+        width: 90%;
+        margin: 10px;
+    }
+}
+
 /* Style the sections to be edge-to-edge */
 section {
     padding: 40px;
