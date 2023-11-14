@@ -21,6 +21,40 @@ nav a {
     font-weight: bold;
 }
 
+/* Dark Theme Styles */
+#theme-switcher i {
+    color: black; /* Default color for light mode */
+}
+
+body.dark-mode #theme-switcher i {
+    color: white; /* Color for dark mode */
+}
+
+body.dark-mode {
+    background-color: #333; /* Dark background for the body */
+    color: #f5f5f5; /* Light text color */
+}
+
+body.dark-mode header,
+body.dark-mode section,
+body.dark-mode #about p,
+body.dark-mode #team p,
+body.dark-mode #contact p,
+body.dark-mode #contact h2,
+body.dark-mode nav {
+    background-color: #454545; /* Slightly lighter than body for contrast */
+    color: #f5f5f5; /* Light text color */
+}
+
+body.dark-mode nav a {
+    color: #f5f5f5; /* Ensure navigation links are also light */
+}
+
+body.dark-mode #contact form {
+    background-color: #626262; /* Dark background for forms */
+    color: #f5f5f5; /* Light text color for form elements */
+}
+
 /* Hamburger Menu Style */
 #hamburger {
     display: none;
@@ -44,8 +78,9 @@ nav a {
     /* Stack list items vertically in mobile view */
     nav li {
         display: block;
-        text-align: left;
+        text-align: center;
         margin-right: 0;
+        padding: 5px;
     }
 
     /* Adjust contact form width in mobile view */
@@ -92,6 +127,12 @@ section form * {
     flex-wrap: wrap;
 }
 
+#home h1,
+#about h2,
+#team h2 {
+    font-size: 60px; /* Or any other size you prefer */
+}
+
 /* flex children that need 100% width */
 #contact > h2,
 #contact > span,
@@ -126,10 +167,14 @@ section form * {
     margin: 2%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1 0 calc(30% - 2%);
+    border: solid;
+    border-radius: 10px;
 }
 
 .team-member img {
     width: 100%;
+    border-radius: 10px;
+    padding-bottom: 10px;
 }
 
 #about img {
@@ -141,20 +186,29 @@ section form * {
 #about > section {
     margin: 2%;
     flex: 1 0 calc(20% - 2%);
+    border: solid;
+    border-radius: 10px;
 }
 
 /* New styles for the contact form */
 /* General Styles for Contact Section */
 #contact {
-    background-color: #f2f2f2; /* Light grey background for the contact section */
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    background-color: #f2f2f200; /* Light grey background for the contact section */
+    padding: 40px; /* Increased padding for better spacing */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* A more modern font */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Max width for better readability */
+    margin: 40px auto; /* Center align and add vertical spacing */
+    border: solid;
 }
 
 #contact h2,
 #contact h3 {
     color: #333;
     text-align: center;
+    margin-bottom: 20px; /* Add spacing below headings */
+    font-weight: normal; /* Less bold for a lighter appearance */
 }
 
 /* Form Styling */
@@ -214,4 +268,28 @@ section form * {
         width: 90%;
         margin: 10px;
     }
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    margin-top: 10px;
+    font-size: 0.8em;
 }
