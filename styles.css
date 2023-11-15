@@ -42,8 +42,8 @@ body.dark-mode h1,
 body.dark-mode #home p,
 body.dark-mode #about p,
 body.dark-mode #team p,
-body.dark-mode #contact p,
-body.dark-mode #contact h2,
+body.dark-mode #contact,
+body.dark-mode #contact > section > * > p,
 body.dark-mode nav {
     background-color: #454545; /* Slightly lighter than body for contrast */
     color: #f5f5f5; /* Light text color */
@@ -108,7 +108,6 @@ section h1, section p {
     color: #333;
     text-align: center; 
 }
-
 section a {
     color: #0074D9;
     text-decoration: underline;
@@ -132,8 +131,12 @@ section form * {
 
 #home h1,
 #about h2,
-#team h2 {
+#team h2,
+#contact h2 {
     font-size: 60px; /* Or any other size you prefer */
+}
+section h3 {
+    font-size: 28px;
 }
 
 /* flex children that need 100% width */
@@ -204,8 +207,7 @@ section form * {
 
 #contact h2,
 #contact h3 {
-    color: #333;
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 20px; /* Add spacing below headings */
     font-weight: normal; /* Less bold for a lighter appearance */
 }
@@ -223,7 +225,6 @@ section form * {
 #contact label {
     display: block;
     margin-top: 10px;
-    color: #666;
 }
 
 #contact input[type="text"],
