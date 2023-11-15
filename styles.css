@@ -138,6 +138,10 @@ section form * {
 section h3 {
     font-size: 28px;
 }
+#team h4 {
+    font-size: 28px;
+    margin: 0 0 15px 0;
+}
 
 /* flex children that need 100% width */
 #contact > h2,
