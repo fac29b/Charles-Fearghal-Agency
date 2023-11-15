@@ -37,6 +37,8 @@ body.dark-mode {
 
 body.dark-mode header,
 body.dark-mode section,
+body.dark-mode h1,
+body.dark-mode #home p,
 body.dark-mode #about p,
 body.dark-mode #team p,
 body.dark-mode #contact p,
@@ -151,10 +153,6 @@ section form * {
     max-width: 55%;
     max-height: 55%;
     object-fit: contain;
-}
-
-#home {
-    background-color: #fff;
 }
 
 #home > div {
