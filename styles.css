@@ -5,6 +5,12 @@ header {
     text-align: center;
     border: 1px solid #ddd;
 }
+.headergold{
+    color: gold;
+    text-shadow: 1px 1px 2px gold, 0 0 1em white, 0 0 0.2em wheat;
+    font-family:monospace;
+ 
+}
 
 nav ul {
     list-style: none;
@@ -14,6 +20,7 @@ nav ul {
 nav li {
     display: inline;
     margin-right: 20px;
+    font-size: 20px;
 }
 
 nav a {
@@ -25,6 +32,7 @@ nav a {
 /* Dark Theme Styles */
 #theme-switcher i {
     color: black; /* Default color for light mode */
+    scale: 150%;
 }
 
 body.dark-mode #theme-switcher i {
@@ -133,10 +141,12 @@ section form * {
 #about h2,
 #team h2,
 #contact h2 {
-    font-size: 60px; /* Or any other size you prefer */
+    font-size: 75px; /* Or any other size you prefer */
+    font-family:cursive;
 }
 section h3 {
     font-size: 28px;
+    font-weight: bolder;
 }
 #team h4 {
     font-size: 28px;
@@ -167,7 +177,6 @@ section h3 {
     margin-top: auto;
     margin-bottom: auto;
 }
-
 
 .team-member {
     margin: 1%;
